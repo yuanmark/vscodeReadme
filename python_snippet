@@ -1,0 +1,66 @@
+{
+    // Place your snippets for python here. Each snippet is defined under a snippet name and has a prefix, body and 
+    // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+    // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the 
+    // same ids are connected.
+    // Example:
+    // "Print to console": {
+    //  "prefix": "log",
+    //  "body": [
+    //      "console.log('$1');",
+    //      "$2"
+    //  ],
+    //  "description": "Log output to console"
+    // }
+    "test description": {
+        "prefix": "test",
+        "body": [
+            "print('test $1')",
+            "print('abc: $2')",
+            "print('test $1')",
+            "$0",
+            "abc def ghi"
+        ],
+    },
+    "tk/ttk import/mainloop": {
+        "prefix": "tk/ttk-00-import&mainloop",
+        "body": [
+            "import tkinter",
+            "#import tkinter.ttk",
+            "win = tkinter.Tk()",
+            "win.title('$1')",
+            "\n$0",
+            "\n\n\n",
+            "#-----------------",
+            "win.mainloop()"
+        ],
+    },  
+    "my tk label": {
+        "prefix": "tk-01-label",
+        "body": [
+            "#建立TK label物件：label$1, text='$2'",
+            "label$1=tkinter.Label(win, text='$2')",
+            "label$1.pack()\n",
+            "$0"
+        ]
+    },
+    "my ttk label": {
+        "prefix": "ttk-01-label",
+        "body": [
+            "#建立TTK label物件：label$1, text='$2'",
+            "label$1=tkinter.ttk.Label(win, text='$2')",
+            "label$1.pack()\n",
+            "$0"
+        ]
+    },
+    "my tk button": {
+        "prefix": "tk-02-button",
+        "body": [
+            "#建立buttom物件：btn$1, text='$2', callback=btn$1_leftClick",
+            "def btn$1_leftClick():",
+            "\tprint('btn$1_leftClick() clicked')",
+            "btn$1=tk.Button(win, text='$2', command=btn$1_leftClick)",
+            "btn$1.pack()"
+        ]
+    }
+}
