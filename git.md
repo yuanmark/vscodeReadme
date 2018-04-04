@@ -11,3 +11,11 @@
         1. do edit... comit to local
         1. git mode: commit to local
 		1. push: click 左下角的上傳箭號(如果出現輸入帳密，就輸入)
+1. outside vscode: new a root-dir/folder (repo會裝在root-dir/folder)
+    1. vscode: open folder
+    1. vscode console:
+        1. cd ..
+        1. git clone https://github.com/yuanmark/folder
+        1. do edit... comit to local
+        1. git mode: commit to local
+		1. push: click 左下角的上傳箭號(如果出現輸入帳密，就輸入)
