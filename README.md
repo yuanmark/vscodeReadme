@@ -6,7 +6,9 @@ my vscode related things
         * git, anaconda: path要打勾
     1. plugins: python, code runner, git history
     1. configure
-        1. usersetups: setup/user
+        1. ctrl-shift-p (vscode command)
+            1. configure language US: locale.json: "locale":"en-US", restart
+        2. usersetups: setup/user
             *    "code-runner.runInTerminal": true,
             *    "files.autoSave": "afterDelay",
             *    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\usr\\bin\\bash.exe",
