@@ -19,3 +19,4 @@
         1. do edit... comit to local
         1. git mode: commit to local
 		1. push: click 左下角的上傳箭號(如果出現輸入帳密，就輸入)
+        1. now test
