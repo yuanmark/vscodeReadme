@@ -1,10 +1,10 @@
 # vscodeReadme
-my vscode related things
+# 一些vscode的注意事項
 
-1. setup
-    1. install: git -> anaconda -> vscode
-        * git, anaconda: path要打勾
-    1. plugins: python, code runner, git history
-    1. configure
-        1. ctrl-shift-p (vscode command)
-            1. configure language US: locale.json: "locale":"en-US", restart
+1. setup：如何安裝vscode & plugins 
+1. 如何configure vscode
+2. debug
+3. hot keys
+6. TK相關的知識
+    1. 自己的TK snippet
+    7. TK範例程式
