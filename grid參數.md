@@ -10,7 +10,7 @@
 | `pady` | External y padding. This dimension is added above and below the widget. |
 | `sticky` | sticky='w'+'e'+'n'+'s' |
 
-<br>
+
 |row & column configure||
 |-------------|---------------|
 | `minsize` | The column or row's minimum size in pixels. If there is nothing in the given column or row, it will not appear, even if you use this option. |
