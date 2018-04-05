@@ -23,7 +23,38 @@
             "$0",
             "abc def ghi"
         ],
-    },
+	},
+	"tk-00-grid": {
+        "prefix": "tk-00-grid-說明",
+        "body": [
+			"'''",
+			"grid的使用方式:",
+            "編號從0開始",
+            "label1.grid(row=0, column=0, sticky='w'+'e'+'n'+'s') #sticky只是黏貼方式，size變化行為不管",
+            "labelTest.grid(row=4, column=0, sticky='w'+'e'+'n'+'s')",
+            "label2.grid(row=1, column=1, columnspan=2, sticky='w'+'e'+'n'+'s')",
+            "entry1.grid(row=0, column=2, sticky='w'+'e'+'n'+'s')",
+            "entry2.grid(row=1, column=3, sticky='w'+'e'+'n'+'s')",
+            "entry3=tkinter.Entry(win)",
+            "entry3.insert(0, 'entry_3')",
+            "entry3.grid(row=2, column=0, rowspan=1, columnspan=3, sticky='w'+'e'+'n'+'s', padx=0, ipadx=0)",
+            "labelObj.grid(row=5, column=0, columnspan=2, sticky='w'+'e')\n",
+            "column/row-configure: 當視窗size變化時，元件大小縮放控制：",
+			"weight: 視窗改變時每一個格子的相對變化比例，weight=0表示不變",
+			"例子：",
+            "win.columnconfigure(0, weight=1)", 
+			"win.columnconfigure(1, weight=5)",
+			"win.rowconfigure(0, weight=0)",
+			"win.rowconfigure(1, weight=0)",
+			"win.rowconfigure(2, weight=1)",
+            "",
+			"Button(form, text='GO').grid(row=2, column=0, columnspan=2, padx=5, pady=5, sticky=W+E+N)",
+			"entry3=tkinter.Entry(win, text='column span entry')",
+			"entry3.grid(row=2, column=0, rowspan=1, columnspan=3, sticky='w'+'e', padx=0, ipadx=0)",
+
+			"'''"
+        ],
+	},
     "tk/ttk import/mainloop": {
         "prefix": "tk/ttk-00-import&mainloop",
         "body": [
@@ -36,20 +67,35 @@
             "#-----------------",
             "win.mainloop()"
         ],
-    },  
+    }, 
+    "my tk label 說明": {
+        "prefix": "tk-01-label-說明",
+        "body": [
+            "'''\n建立TK label物件：labelObj, text='label內容'",
+            "其他參數:https://github.com/yuanmark/vscodeReadme/blob/master/label參數.md",
+            "labelObj = tkinter.Label(win, relief=flat/raised, text, justify=left,",
+            "\t font, height, width, padx, pady, bg, fg, ancor, bitmap/image) \n",
+            "labelObj=tkinter.Label(win, ",
+            "\ttext='labelTest\\nabc\\ndef', ",
+            "\theight=3, width=15, justify='left', anchor='e',",
+            "\trelief='raised', ",
+            "\tpadx=10, pady=5,",
+            "\tbg='red', fg='yellow')",
+            "'''"
+        ]
+    }, 
     "my tk label": {
         "prefix": "tk-01-label",
         "body": [
-            "#建立TK label物件：label$1, text='$2'",
-            "label$1=tkinter.Label(win, text='$2')",
-            "label$1.pack()\n",
+            "#TK label物件：label$1, ",
+            "label$1=tkinter.Label(win, text='${2:this is a test}')\n",
             "$0"
         ]
     },
     "my ttk label": {
         "prefix": "ttk-01-label",
         "body": [
-            "#建立TTK label物件：label$1, text='$2'",
+            "#TTK label物件：label$1, text='$2'",
             "label$1=tkinter.ttk.Label(win, text='$2')",
             "label$1.pack()\n",
             "$0"
@@ -62,7 +108,15 @@
             "def btn$1_leftClick():",
             "\tprint('btn$1_leftClick() clicked')",
             "btn$1=tk.Button(win, text='$2', command=btn$1_leftClick)",
-            "btn$1.pack()"
+			"\n"
         ]
-    }
+	},
+	"my tk entry": {
+        "prefix": "tk-02-entry",
+        "body": [
+            "#建立TK entry(輸入)物件：entry$1, text='${2:this is an entry$1}'",
+			"entry$1=tkinter.Entry(win)",
+			"entry$1.insert(0, '$2')\n",
+        ]
+    },
 }
