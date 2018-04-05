@@ -119,4 +119,23 @@
 			"entry$1.insert(0, '$2')\n",
         ]
     },
+	"my tk treeview": {
+        "prefix": "ttk-09-treeview",
+        "body": [
+            "#建立TK tree$1物件：tree$1",
+            "tree$1=tkinter.ttk.Treeview$1(win)",
+            "tree$1['columns']=('one','two')",
+            "tree$1.column('one', width=100 )",
+            "tree$1.column('two', width=100)",
+            "tree$1.heading('one', text='coulmn A')",
+            "tree$1.heading('two', text='column B')",
+        ]
+    },
+	"my tk treeview-insert": {
+        "prefix": "ttk-09-treeview-insert",
+        "body": [
+            "id$2=tree$1.insert('' , 'end'/0, text='id$2', values=('$2A','$2B')) #end/0: insert from end/head of parent",
+            "idchild = tree$1.insert(id$2, 'end'/0, text='child of id$2', values=('$2a','$2b'))"
+        ]
+    },
 }

@@ -41,4 +41,5 @@
 | _parent_ | item ID of parent item, or empty string to create a new top-level item. |
 | _index_ | an integer, or the value “end”, specifying where in the list of parent’s children to insert the new item. <br> If _index_ <= 0 , new node is inserted at the beginning; <br> if _index_ >= current number of children, it is inserted at the end. | 
 | _iid_ | If is specified, it is used as the item identifier; <br> _iid_must not already exist in the tree. Otherwise, a new unique identifier is generated. 
-
+<br>
+| _**kw_| See [Item Options](https://docs.python.org/3/library/tkinter.ttk.html#item-options) for the list of available points.|
