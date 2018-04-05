@@ -1,0 +1,35 @@
+|`Frame` widget||
+|--|--|
+| `bg` or `background` | The frame's background color. See [Section 5.3, “Colors”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/colors.html "5.3. Colors"). |
+| `bd` or `borderwidth` | Width of the frame's border. The default is 0 (no border). For permitted values, see [Section 5.1, “Dimensions”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/dimensions.html "5.1. Dimensions"). |
+| `cursor` | The cursor used when the mouse is within the frame widget; see [Section 5.8, “Cursors”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/cursors.html "5.8. Cursors"). |
+| `height` | The vertical [dimension](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/dimensions.html "5.1. Dimensions") of the new frame. This will be ignored unless you also call `.grid_propagate(0)` on the frame; see [Section 4.2, “Other grid management methods”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/grid-methods.html "4.2. Other grid management methods"). |
+| `highlightbackground` | [Color](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/colors.html "5.3. Colors") of the focus highlight when the frame does not have focus. See [Section 53, “Focus: routing keyboard input”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/focus.html "53. Focus: routing keyboard input"). |
+| `highlightcolor` | [Color](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/colors.html "5.3. Colors") shown in the focus highlight when the frame has the [focus](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/focus.html "53. Focus: routing keyboard input"). |
+| `highlightthickness` | Thickness of the [focus](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/focus.html "53. Focus: routing keyboard input") highlight. |
+| `padx` | Normally, a `Frame` fits tightly around its contents. To add ``_`N`_`` pixels of horizontal space inside the frame, set ``padx=_`N`_``. |
+| `pady` | Used to add vertical space inside a frame. See `padx` above. |
+| `relief` | The default relief for a frame is `tk.FLAT`, which means the frame will blend in with its surroundings. To put a border around a frame, set its `borderwidth` to a positive value and set its relief to one of the standard relief types; see [Section 5.6, “Relief styles”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/relief.html "5.6. Relief styles"). |
+| `takefocus` | Normally, frame widgets are not visited by input focus (see [Section 53, “Focus: routing keyboard input”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/focus.html "53. Focus: routing keyboard input") for an overview of this topic). However, you can set `takefocus=1` if you want the frame to receive keyboard input. To handle such input, you will need to create bindings for keyboard events; see [Section 54, “Events”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/events.html "54. Events: responding to stimuli") for more on events and bindings. |
+| `width` | The horizontal dimension of the new frame. See [Section 5.1, “Dimensions”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/dimensions.html "5.1. Dimensions"). This value be ignored unless you also call `.grid_propagate(0)` on the frame; see [Section 4.2, “Other grid management methods”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/grid-methods.html "4.2. Other grid management methods"). |
+
+
+
+|`LabelFrame` widget ||
+|--|--|
+| `bg` or `background` | The background color to be displayed inside the widget; see [Section 5.3, “Colors”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/colors.html "5.3. Colors"). |
+| `bd` or `borderwidth` | Width of the border drawn around the perimeter of the widget; see [Section 5.1, “Dimensions”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/dimensions.html "5.1. Dimensions"). The default value is two pixels. |
+| `cursor` | Selects the cursor that appears when the mouse is over the widget; see [Section 5.8, “Cursors”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/cursors.html "5.8. Cursors"). |
+| `fg` or `foreground` | [Color](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/colors.html "5.3. Colors") to be used for the label text. |
+| `height` | The vertical [dimension](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/dimensions.html "5.1. Dimensions") of the new frame. This will be ignored unless you also call `.grid_propagate(0)` on the frame; see [Section 4.2, “Other grid management methods”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/grid-methods.html "4.2. Other grid management methods"). |
+| `highlightbackground` | [Color](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/colors.html "5.3. Colors") of the focus highlight when the widget does not have [focus](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/focus.html "53. Focus: routing keyboard input"). |
+| `highlightcolor` | The [color](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/colors.html "5.3. Colors") of the focus highlight when the widget has [focus](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/focus.html "53. Focus: routing keyboard input"). |
+| `highlightthickness` | Thickness of the [focus](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/focus.html "53. Focus: routing keyboard input") highlight. |
+| `labelanchor` | Use this option to specify the position of the label on the widget's border. The default position is `'nw'`, which places the label at the left end of the top border. For the nine possible label positions, refer to this diagram: ![](http://www.nmt.edu/tcc/help/pubs/tkinter/img/labelanchor.png) |
+| `labelwidget` | Instead of a text label, you can use any widget as the label by passing that widget as the value of this option. If you supply both `labelwidget` and `text` options, the `text` option is ignored. |
+| `padx` | Use this option to add additional padding inside the left and right sides of the widget's frame. The value is in pixels. |
+| `pady` | Use this option to add additional padding inside the top and bottom of the widget's frame. The value is in pixels. |
+| `relief` | This option controls the appearance of the border around the outside of the widget. The default style is `tk.GROOVE`; for other values, see [Section 5.6, “Relief styles”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/relief.html "5.6. Relief styles"). |
+| `takefocus` | Normally, the widget will not receive focus; supply a `True` value to this option to make the widget part of the focus traversal sequence. For more information, see [Section 53, “Focus: routing keyboard input”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/focus.html "53. Focus: routing keyboard input"). |
+| `text` | Text of the label. |
+| `width` | The horizontal [dimension](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/dimensions.html "5.1. Dimensions") of the new frame. This will be ignored unless you also call `.grid_propagate(0)` on the frame; see [Section 4.2, “Other grid management methods”](http://infohost.nmt.edu/tcc/help/pubs/tkinter/web/grid-methods.html "4.2. Other grid management methods"). |
