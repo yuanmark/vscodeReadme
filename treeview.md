@@ -27,7 +27,7 @@
 | `selectmode='extended'` | The user may select multiple items at once. |
 | `selectmode='none'` | The user cannot select items with the mouse. |
 
- |
+
 |Treeview||
 |--|--|
 | `show` | To suppress the labels at the top of each column, specify `show='tree'`. The default is to show the column labels. |
