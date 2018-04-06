@@ -13,15 +13,17 @@ All hotkeys: set/keyboard shortcut
 |-------------|---------------|
 | `Ctrl+X` | 剪切 |
 | `Ctrl+C` | 複製 |
+| `Alt+Up/Down` | 移動當前行上下 |
+| `Shift+Alt+Up/Down` | 複製當前行 |
 | `Ctrl+Shift+K` | 刪除當前行 |
 | `Ctrl+Enter` | 在當前行之後插入一行 |
 | `Ctrl+Shift+Enter` | 在當前行之前插入一行 |
-| `Alt+Up/Down` | 移動當前行上下 |
-| `Shift+Alt+Up/Down` | 在當前行上下複製當前行 |
+| `Shift+Alt+F`| 格式化(format)全文|
+| `Ctrl+K Ctrl+F`| 格式化(format)選擇區|
 | `Ctrl+Up/Down` | 行視圖上下偏移 |
 | `Alt+PageUp/PageDown` | 屏視圖上下偏移 |
-| `Ctrl+Shift+[` | 折疊區域代碼 |
-| `Ctrl+Shift+]` | 展開區域代碼 |
+| `Ctrl+Shift+[` | 折疊(fold)區域代碼 |
+| `Ctrl+Shift+]` | 展開(expand)區域代碼 |
 | `Ctrl+K Ctrl+[` | 折疊區域內所有代碼（包括子域和父域） |
 | `Ctrl+K Ctrl+]` | 展開區域內所有代碼（包括子域和父域） |
 | `Ctrl+K Ctrl+0` | 折疊所有區域內的代碼 |
@@ -31,6 +33,8 @@ All hotkeys: set/keyboard shortcut
 | `Ctrl+/` | 添加關閉行註釋 |
 | `Shift+Alt+A` | 添加關閉區域註釋 |
 | `Alt+Z` | 添加關閉自動換行 |
+| `Ctrl+\`| side by side 檢視|
+| `Ctrl+Shift+V` |Markdown文件檢視 |
 
 
 |導航||
@@ -65,6 +69,7 @@ All hotkeys: set/keyboard shortcut
 | `Ctrl+K F` | 關閉當前打開的文件夾 |
 | `Ctrl+\` | 拆分編輯器（最多拆分為三塊） |
 | `Ctrl+1/2/3` | 切換焦點在不同的拆分窗口 |
+| `Ctrl++`, `Ctrl+-` | 改變視窗文字大小 |
 
 |文件管理||
 | :-- | :-- |
