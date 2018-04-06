@@ -1,17 +1,17 @@
 # Git operation
-1.    Git概念&使用：xmind
-# 整理： local開git, remote sync
-1. git: new a repo (name:XXX)
-1. vsc: open a dir, 
-1. vsc: 
-    1. git/上方git/init commit
-    1. add readme.md (this file)
-    1. commit it
-1. vsc-term: 
-    1. git remote add origin https://github/username/XXX
-    1. git -v (verify remote repo exist)
-1. vsc: 
-    1. push/sync as usual
+1. Git概念&使用：xmind
+1. 整理： local開git, remote sync
+    1. git: new a repo (name:XXX)
+    1. vsc: open a dir, 
+    1. vsc: 
+        1. git/上方git/init commit
+        1. add readme.md (this file)
+        1. commit it
+    1. vsc-term: 
+        1. git remote add origin https://github/username/XXX
+        1. git -v (verify remote repo exist)
+    1. vsc: 
+        1. push/sync as usual
 
 1. 細節描述
     3.    github: login, create new project -> get URL (ex.     https://github.com/yuanmark/protfolio)
