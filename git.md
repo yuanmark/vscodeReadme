@@ -9,6 +9,10 @@
         1. git remote add origin github-URL
         1. git pull github-URL master
     1. vs: open folder
+        1. do some changes
+        2. push
+            1. if ask: publish: yes
+            1. if ask: id/pass: give
 1. 整理： local開git, remote sync
     1. git: new a repo (name:XXX)
     1. vsc: open a dir, 
