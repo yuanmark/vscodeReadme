@@ -1,5 +1,14 @@
 # Git operation
 1. Git概念&使用：xmind
+1. 整理(2)： local開git, remote sync
+    1. vs-term:
+        1. git config --global user.email "mail"
+        1. git config --global user.name "id"
+        1. cd local-DIR
+        1. git init
+        1. git remote add origin github-URL
+        1. git pull github-URL master
+    1. vs: open folder
 1. 整理： local開git, remote sync
     1. git: new a repo (name:XXX)
     1. vsc: open a dir, 
@@ -12,7 +21,6 @@
         1. git -v (verify remote repo exist)
     1. vsc: 
         1. push/sync as usual
-
 1. 細節描述
     3.    github: login, create new project -> get URL (ex.     https://github.com/yuanmark/protfolio)
         *    順便安裝：octotree (chrome store) -> 開啟此plugin後，將原本URL改為上面 我的URL
