@@ -19,4 +19,13 @@
     1. windows: click vscode
 	2. ubuntu: code & (enter vscode)
     
-1. 安裝 plugins: python, code runner, git history
+1. 安裝 plugins: python, code runner, git history, settings sync
+	1. settings sync
+		1. 安裝後:vsc-cmd/sync:download
+			1. 會問：git token/gist id：均為tokens
+	1. python, code runner
+	1. git history
+		1. vsc-cmd: 
+			1. git view history (git log): 顯示歷史圖形
+			1. git view file history
+			1. git view line history

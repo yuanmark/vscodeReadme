@@ -6,6 +6,7 @@ import tkinter.ttk
 win = tkinter.Tk()
 win.title('tk grid test')
 
+#test
 #keyin: ttktree, find ttk-09-treeview, tab,enter
 #建立TK tree物件：tree
 tree=tkinter.ttk.Treeview(win)
